@@ -1,0 +1,16 @@
+{
+    "extensionName": "s2aio",
+    "extensionPort": 50209,
+    "blockSpecs": [
+        [
+            "",
+            "How are you",
+            "send_hi"
+        ],
+        [
+            "r",
+            "return from How are you",
+            "return_hi"
+        ]
+    ]
+}

@@ -1,0 +1,16 @@
+﻿{
+    "extensionName": "hello",
+    "extensionPort": 50209,
+    "blockSpecs": [
+        [
+            "",
+            "你好嗎",
+            "send_hi"
+        ],
+        [
+            "r",
+            "你好嗎結果",
+            "return_hi"
+        ]
+    ]
+}
