@@ -14,13 +14,13 @@ import signal
 import sys
 import webbrowser
 import time
-import logging
+#import logging
 from aiohttp import web
 
 class HELLO:
     def __init__(self, language='3', sleeper=10):
-        logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s : %(message)s', filename='mylog.txt')
-        logging.info("init")
+        #logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s : %(message)s', filename='mylog.txt')
+        #logging.info("init")
         self.sleeper = sleeper
         self.scratch_executable = '"C:/Program Files (x86)/Scratch 2/Scratch 2.exe"'
         #使用-l 1指定為英文，預設使用繁體中文(-l 3)
@@ -50,7 +50,6 @@ class HELLO:
             os_string = "start /b " + self.scratch_executable + ' ' + self.scratch_project
             await asyncio.sleep(self.windows_wait_time)
             os.system(os_string)
-            logging.info("start /b")
             await self.poll_watchdog()
         except:
             pass
